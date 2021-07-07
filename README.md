@@ -31,4 +31,4 @@
 - **Coding inside [index.html](https://github.com/MrShameer/ThreeJS-Tutorial/blob/main/FluidSimulation/index.html) is basic**
 - **Download [script.js](https://github.com/MrShameer/ThreeJS-Tutorial/blob/main/FluidSimulation/script.js)**
 - **You can try changing "mouseover" at line '1379' in script.js to "mousedown"**
-- **You can also try modifying the config at line '48-74' to suit your need**
+- **You can also try modifying the config at line '48-74' to suit ur need**
