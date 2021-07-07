@@ -1,8 +1,5 @@
 <h1 align="center">
-  <br>
-  <a href="https://github.com/MrShameer/ThreeJS-Tutorial"></a>
-  <br>
-  ThreeJS Tutorial
+  <a href="https://github.com/MrShameer/ThreeJS-Tutorial">ThreeJS Tutorial</a>
   <br>
 </h1>
 
