@@ -3,7 +3,7 @@
   <br>
 </h1>
 
-<h4 align="center">Basic ThreeJS/WebGL Tutorial & Template<br>Feel free to take the code. I have provided comments throught the code and simple steps on how to use it</h4>
+<h4 align="center">Basic ThreeJS/WebGL Tutorial & Template<br>Feel free to take the code<br>I have provided comments throught the code and simple steps on how to use it</h4>
 
 <p align="center">
   <a href="#fluid-simulation">Fluid Simulation</a>
