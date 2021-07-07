@@ -9,7 +9,7 @@
 <h4 align="center">Basic ThreeJS Tutorial & Template</h4>
 
 <p align="center">
-  <a href="#Fluid Simulation">Fluid Simulation</a>
+  <a href="#fluid-simulation">Fluid Simulation</a>
   •
   <a href="#usage">Usage</a>
   •
