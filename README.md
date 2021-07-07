@@ -8,7 +8,7 @@
 <p align="center">
   <a href="#fluid-simulation">Fluid Simulation</a>
   •
-  <a href="#spawning-model">Spawning Models</a>
+  <a href="#spawning-models">Spawning Models</a>
 </p>
 
 
