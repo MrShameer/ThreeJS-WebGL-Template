@@ -1,9 +1,9 @@
 <h1 align="center">
-  <a href="https://github.com/MrShameer/ThreeJS-Tutorial">ThreeJS Tutorial</a>
+  <a href="https://github.com/MrShameer/ThreeJS-WebGL-Template">ThreeJS-WebGL-Template</a>
   <br>
 </h1>
 
-<h4 align="center">Basic ThreeJS Tutorial & Template</h4>
+<h4 align="center">Basic ThreeJS/WebGL Tutorial & Template</h4>
 
 <p align="center">
   <a href="#fluid-simulation">Fluid Simulation</a>
