@@ -22,7 +22,8 @@
 - **You can try changing "mouseover" at line '1379' in script.js to "mousedown"**
 - **You can also try modifying the config at line '48-74' to suit your need**
 
-<br>
+<br> 
+
 ## Spawning Models
 - **[Example](https://mrshameer.github.io/ThreeJS-WebGL-Template/SpawningModels/)**
 
