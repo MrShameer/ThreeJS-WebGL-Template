@@ -13,9 +13,9 @@
 
 
 ## Fluid Simulation
-[Example](https://mrshameer.github.io/ThreeJS-Tutorial/FluidSimulation/)
-•••
-[Tutorial](https://mrshameer.github.io/ThreeJS-Tutorial/FluidSimulation/tutorial.html)
+- **[Example](https://mrshameer.github.io/ThreeJS-Tutorial/FluidSimulation/)**
+
+- **[Tutorial](https://mrshameer.github.io/ThreeJS-Tutorial/FluidSimulation/tutorial.html)**
 
 ### Things you need to know
 - **Coding inside [index.html](https://github.com/MrShameer/ThreeJS-Tutorial/blob/main/FluidSimulation/index.html) is basic**
@@ -25,7 +25,7 @@
 
 
 ## Spawning Models
-[Example](https://mrshameer.github.io/ThreeJS-Tutorial/SpawningModels/)
+- **[Example](https://mrshameer.github.io/ThreeJS-Tutorial/SpawningModels/)**
 
 ### Things you need to know
 - **Download [script.js](https://github.com/MrShameer/ThreeJS-Tutorial/blob/main/SpawningModels/script.js)**
