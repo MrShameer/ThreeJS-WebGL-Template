@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Hexagon Grid</title>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.js" integrity="sha512-NLtnLBS9Q2w7GKK9rKxdtgL7rA7CAS85uC/0xd9im4J/yOL4F9ZVlv634NAM7run8hz3wI2GabaA6vv8vJtHiQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<style type="text/css">
+		body{
+			margin: 0;
+			overflow: hidden;
+		}
+	</style>
+</head>
+<body>
+	<script>
+		var raycaster = new THREE.Raycaster();
+		var mouse = new THREE.Vector2(1,1);
+		var aspect = window.innerWidth / window.innerHeight;
+		const frustumSize = 145;
+		var tops = frustumSize / 2, bottoms = frustumSize / - 2, lefts = frustumSize * aspect / - 2, rights = frustumSize * aspect / 2;
+		const scene = new THREE.Scene();
+		var camera = new THREE.OrthographicCamera( lefts, rights, tops, bottoms, 1, 1000 );
+
+		const renderer = new THREE.WebGLRenderer();
+		renderer.setSize( window.innerWidth, window.innerHeight );
+		renderer.setClearColor("#ffffff");
+		document.body.appendChild( renderer.domElement );
+		window.addEventListener('resize', () => {
+			renderer.setSize(window.innerWidth,window.innerHeight);
+			aspect = window.innerWidth / window.innerHeight;
+			camera.left = frustumSize * aspect / - 2;
+			camera.right = frustumSize * aspect / 2;
+			camera.top = frustumSize / 2;
+			camera.bottom = frustumSize / - 2;
+			camera.updateProjectionMatrix();
+		})
+
+		document.addEventListener('mousemove', onDocumentMouseMove, false);
+
+		function onDocumentMouseMove(event){
+			event.preventDefault();
+			mouse.x = (event.clientX / window.innerWidth) * 2 - 1;
+			mouse.y = -(event.clientY / window.innerHeight) * 2 + 1;
+		}
+
+		var geometry = new THREE.CylinderGeometry(1, 1, 1, 6);
+
+		/*Make Outline
+		var outline_geo = new THREE.CylinderGeometry(1, 1, 1, 6);
+		var outline_mat = new THREE.MeshBasicMaterial({color : 0xffffff, side: THREE.BackSide});
+		*/
+
+		var mesh =  [];
+		var outline =  [];
+
+		//took my a while to get the math behide this so you gotta appretiate it
+		let h=0;
+		for (var j = 0; j<frustumSize-1; j++) {
+			let k = j%2;
+			for (var i = 0; i<frustumSize+1-k ; i++) {
+				let material = new THREE.MeshBasicMaterial({color: 0xf0f0f0});
+				mesh[i+h]=new THREE.Mesh(geometry, material);
+				mesh[i+h].position.set(frustumSize-i*2-k,0,-frustumSize/2+j*1.7);
+				scene.add(mesh[i+h]);
+
+				/*Apply the outline on the canvas
+				outline[i+h] = new THREE.Mesh(outline_geo, outline_mat);
+				outline[i+h].position.set(frustumSize-i*2-k,0,-frustumSize/2+j*1.7);
+				outline[i+h].scale.multiplyScalar(1.2);
+				scene.add(outline[i+h]);
+				*/
+			}
+			h+=i;
+		}
+
+		camera.rotation.x = -Math.PI / 2;
+		camera.position.y = 2;
+
+		const animate = function () {
+			requestAnimationFrame( animate );
+			raycaster.setFromCamera( mouse, camera );
+			var intersects = raycaster.intersectObjects( scene.children );
+
+			for (let q of mesh) {
+				if ( intersects.length > 0 && intersects[ 0 ].object === q ) {
+					q.material.color.set(0x000000);
+				} 
+				else {
+					q.material.color.set(0xf0f0f0);
+				}
+			}
+			renderer.render( scene, camera );
+		};
+		animate();
+	</script>
+</body>
+</html>

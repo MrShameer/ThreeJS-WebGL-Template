@@ -9,6 +9,8 @@
   <a href="#fluid-simulation">Fluid Simulation</a>
   •
   <a href="#spawning-models">Spawning Models</a>
+  •
+  <a href="#hexagon-grid">Hexagon Grid</a>
 </p>
 
 
@@ -31,3 +33,11 @@
 - **Here you can modify the threejs code to suit your need (I have left some comments in the code)**
 - **If you want to spawn bunch of different models then you can make a folder for all ther models and make a php code that gets all that model and give it to the three js code for it to spawn [Like This](http://lrgs.ftsm.ukm.my/users/a173586/mypt4/login.php)**
 - **[Other Examples](https://mrshameer.github.io/Ecommerse/)**
+
+
+## Hexagon Grid
+- **[Example](https://mrshameer.github.io/ThreeJS-WebGL-Template/HexagonGrid/)**
+
+### Things you need to know
+- **Download [index.html](https://github.com/MrShameer/ThreeJS-WebGL-Template/blob/main/HexagonGrid/index.html)**
+- **Here you can modify the threejs code to suit your need (I have left some comments in the code)**
