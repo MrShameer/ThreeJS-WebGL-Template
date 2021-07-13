@@ -24,6 +24,7 @@
 - **You can try changing "mouseover" at line '1379' in script.js to "mousedown"**
 - **You can also try modifying the config at line '48-74' to suit your need**
 
+<br> 
 
 ## Spawning Models
 - **[Example](https://mrshameer.github.io/ThreeJS-WebGL-Template/SpawningModels/)**
@@ -32,6 +33,7 @@
 - **Download [script.js](https://github.com/MrShameer/ThreeJS-WebGL-Template/blob/main/SpawningModels/script.js)**
 - **Here you can modify the threejs code to suit your need (I have left some comments in the code)**
 - **If you want to spawn bunch of different models then you can make a folder for all ther models and make a php code that gets all that model and give it to the three js code for it to spawn [Like This](http://lrgs.ftsm.ukm.my/users/a173586/mypt4/login.php)**
+<<<<<<< HEAD
 - **[Other Examples](https://mrshameer.github.io/Ecommerse/)**
 
 
@@ -41,3 +43,6 @@
 ### Things you need to know
 - **Download [index.html](https://github.com/MrShameer/ThreeJS-WebGL-Template/blob/main/HexagonGrid/index.html)**
 - **Here you can modify the threejs code to suit your need (I have left some comments in the code)**
+=======
+- **Other Examples like [Example 1](https://mrshameer.github.io/Ecommerse/) & [Example 2](http://lrgs.ftsm.ukm.my/users/a173586/mypt4/login.php)**
+>>>>>>> 9df1113a798c2f6e1dbfff89b1317e1bf96914fa
