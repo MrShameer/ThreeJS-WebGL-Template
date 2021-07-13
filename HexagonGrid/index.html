@@ -13,10 +13,12 @@
 </head>
 <body>
 	<script>
+		//change this to change how many hexagon you want on thee screen
+		const frustumSize = 50;
+
 		var raycaster = new THREE.Raycaster();
 		var mouse = new THREE.Vector2(1,1);
 		var aspect = window.innerWidth / window.innerHeight;
-		const frustumSize = 145;
 		var tops = frustumSize / 2, bottoms = frustumSize / - 2, lefts = frustumSize * aspect / - 2, rights = frustumSize * aspect / 2;
 		const scene = new THREE.Scene();
 		var camera = new THREE.OrthographicCamera( lefts, rights, tops, bottoms, 1, 1000 );

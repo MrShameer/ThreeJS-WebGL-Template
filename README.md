@@ -42,6 +42,6 @@
 
 ### Things you need to know
 - **Download [index.html](https://github.com/MrShameer/ThreeJS-WebGL-Template/blob/main/HexagonGrid/index.html)**
+- **You can change the `frustumSize` at line 17 to chnage how many hexagon you want on the screen**
 - **Here you can modify the threejs code to suit your need (I have left some comments in the code)**
-=======
 - **Other Examples like [Example 1](https://mrshameer.github.io/Ecommerse/) & [Example 2](http://lrgs.ftsm.ukm.my/users/a173586/mypt4/login.php)**
