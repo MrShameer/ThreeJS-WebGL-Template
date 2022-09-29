@@ -1,7 +1,11 @@
+<!-- 
+DONT FORGET TO CHANGE THE FILE EXTENTION TO .PHP
 <?php
+// IF YOU'RE USING PHP OR ELSE SEE BELOW IF YOU'RE USING JAVASCRIPT
 // Importing all the models
-$models = array_diff(scandir('./models/'), array('..', '.'));
-?>
+// $models = array_diff(scandir('./models/'), array('..', '.'));
+?> 
+-->
 
 <html>
 <head>
@@ -27,7 +31,13 @@ $models = array_diff(scandir('./models/'), array('..', '.'));
 			return Math.random() * (max - min) + min;
 		}
 
-		var models = <?php echo json_encode($models); ?>;
+		// IF YOU'RE USING PHP, UNCOMMENT THE FOLLOWING LINE
+		// var models = <?php // echo json_encode($models); ?>;
+
+		// IF YOU'RE USING JAVASCRIPT USE THE FOLLOWING LINE
+		var models = ['alien.glb','ambulance.glb','astronautA.glb','blasterA.glb','blasterB.glb','blasterC.glb','blasterD.glb','blasterE.glb','blasterF.glb','blasterG.glb',
+		'blasterH.glb','blasterI.glb','blasterJ.glb','blasterK.glb','blasterL.glb','blasterM.glb','blasterN.glb','delivery.glb','firetruck.glb','garbageTruck.glb',
+		'hatchbackSports.glb','police.glb','raceFuture.glb','sedanSports.glb','suv.glb','taxi.glb','tractorPolice.glb','truck.glb','tractorShovel.glb','van.glb','weapon_rifle.glb']
 
 		let toys = [];
 		const scene = new THREE.Scene();
@@ -44,8 +54,13 @@ $models = array_diff(scandir('./models/'), array('..', '.'));
 		})
 		var loader = new THREE.GLTFLoader();
 
-		for(let [key, value] of Object.entries(models)){
-			loader.load('./models/'+value, function ( gltf ) {
+		// IF YOU'RE USING PHP, UNCOMMENT THE FOLLOWING LINE
+		//for(let [key, value] of Object.entries(models)){
+
+		// IF YOU'RE USING JAVASCRIPT USE THE FOLLOWING LINE
+		models.forEach(function(value){
+
+			loader.load('./models/'+ value, function ( gltf ) {
 				gltf.scene.position.set(randomfloat(-15,15),randomfloat(10,30),0);
 				gltf.scene.traverse( function ( child ) {
 					if ( child.isMesh ) {
@@ -59,7 +74,8 @@ $models = array_diff(scandir('./models/'), array('..', '.'));
 			}, undefined, function ( error ) {
 					//console.warn( error );
 				});
-		}
+		});
+		// DONT FORGET TO REMOVE THE LAST BRACKET IF YOU'RE USING PHP
 
 		camera.position.z = 10;
 
@@ -92,11 +108,9 @@ $models = array_diff(scandir('./models/'), array('..', '.'));
 					a.position.set(randomfloat(-15,15),randomfloat(10,30),0);
 				} else {
 				}
-
 			}
 			renderer.render( scene, camera );
 		};
-
 		animate();
 	</script>
 </body>
