@@ -28,7 +28,7 @@
 <br>
 
 ## Spawning Models
-- **[Example 1](https://mrshameer.github.io/ThreeJS-WebGL-Template/SpawningModels/) &nbsp;&nbsp;&nbsp; [Examples 2](http://lrgs.ftsm.ukm.my/users/a173586/mypt4/login.php) &nbsp;&nbsp;&nbsp; [Examples 3](https://mrshameer.github.io/Ecommerse/)**
+- **[Example 1](https://mrshameer.github.io/ThreeJS-WebGL-Template/SpawningModels/) &nbsp;&nbsp;&nbsp; [Examples 2](https://mrshameer.github.io/ThreeJS-WebGL-Template/SpawningModels/Example) &nbsp;&nbsp;&nbsp; [Examples 3](https://mrshameer.github.io/Ecommerse/)**
 
 ### Things you need to know
 - **Download [script.js](https://github.com/MrShameer/ThreeJS-WebGL-Template/blob/main/SpawningModels/script.js)**
